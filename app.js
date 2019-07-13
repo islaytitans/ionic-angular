@@ -33,7 +33,7 @@ confirmBtn.addEventListener('click', () => {
     }
 
     const newItem = document.createElement('ion-item');
-    newItem.textContent = enteredReason + ": £" + enteredAmount;
+    newItem.textContent = `${enteredReason}: £${enteredAmount}`;
     expensesList.appendChild(newItem);
 
     totalExpenses += +enteredAmount;
